@@ -17,7 +17,8 @@
 <body>
   <header>
     <nav>
-      <img src="images/icon-menu.svg" alt="menu">
+      <img src="images/logo.svg" alt="logo" class="logo">
+      <img src="images/icon-menu.svg" alt="menu" class="hamburger">
       <ul class="opac">
         <ul >
           <img src="images/icon-close.svg" alt="close" class="close">
@@ -30,22 +31,35 @@
     </ul>
       
     </nav>
-    <img src="images/logo.svg" alt="logo" class="logo">
-    <img src="images/icon-cart.svg" alt="cart">
-    <img src="images/image-avatar.png" alt="avatar" class="avatar">
+    
+   <nav>
+      <img src="images/icon-cart.svg" alt="cart">
+      <sup></sup>
+      <img src="images/image-avatar.png" alt="avatar" class="avatar">
+   </nav>
   </header>
 
 
   <article class="container">
-    <main>
+    <div class="sub-container">
+    <div class="big">
       <img src="images/image-product-1.jpg" alt="">
       <img src="images/image-product-2.jpg" alt="">
       <img src="images/image-product-3.jpg" alt="">
       <img src="images/image-product-4.jpg" alt="">
       <img src="images/icon-previous.svg" alt="previous">
       <img src="images/icon-next.svg" alt="next">
-    </main>
+    </div>
+
+    <div class="thumbnail">
+      <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
+      <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
+      <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
+      <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
+    </div>
   
+    </div>
+    
   <section>
     <h3>Sneaker Company</h3>
 
@@ -63,21 +77,24 @@
    <p>0</p>
    <img src="images/icon-plus.svg" alt="plus">
  </figcaption> 
-  <button>Add to cart</button>
+  <button><img src="images/icon-cart.svg" alt="cart"> Add to cart</button>
   </section>
   
   </article>
   <aside class="modal">
     <h4>Cart</h4>
+    <hr>
     <section>
       <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
       <summary>
-        <p class="shoe description"></p>
-        <p class="price-tag"><b class="totals"></b></p>
-        <img src="images/icon-delete.svg" alt="bin">
+        <p class="shoe description">Autumn Limited Edition...</p>
+        <p class="price-tag">$125.00 x 3 <b class="totals">$375.00</b></p>
+        
       </summary>
-      <button>Checkout</button>
+      <img src="images/icon-delete.svg" alt="bin">
+      
     </section>
+    <button>Checkout</button>
   </aside>
   
   <div class="attribution">
@@ -85,4 +102,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="script.js"></script>
 </html>
